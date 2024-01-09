@@ -1,6 +1,3 @@
-## Testing dbt project: `DBT_jaffle_shop`
-
-`jaffle_shop` is a fictional ecommerce store. This dbt project transforms raw data from an app database into a customers and orders model ready for analytics.
 
 ### Prerequisite for DBT
 1. Python must be installed in the Machine, dbt-core is compatible with Python versions 3.7, 3.8, and 3.9
