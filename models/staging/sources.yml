@@ -1,0 +1,40 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw source data from demo seeds"
+    database: raw
+    tables:
+      - name: customers
+        description: "Raw customer source table"
+        columns:
+          - name: id
+            description: "Customer ID"
+          - name: first_name
+            description: "Customer first name"
+          - name: last_name
+            description: "Customer last name"
+
+      - name: orders
+        description: "Raw orders source table"
+        columns:
+          - name: id
+            description: "Order ID"
+          - name: customer_id
+            description: "Foreign key to customers"
+          - name: order_date
+            description: "Date order was placed"
+          - name: status
+            description: "Order status (placed/shipped/completed/etc)"
+
+      - name: payments
+        description: "Raw payments source table"
+        columns:
+          - name: id
+            description: "Payment ID"
+          - name: order_id
+            description: "Foreign key to orders"
+          - name: payment_method
+            description: "Payment method (credit_card/coupon/bank_transfer/gift_card)"
+          - name: amount
+            description: "Payment amount"
